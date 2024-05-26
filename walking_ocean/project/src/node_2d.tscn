@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dun10n61uy41h"]
+
+[ext_resource type="Texture2D" uid="uid://p8h1md3txpmo" path="res://assets/Mossy Tileset/Mossy - BackgroundDecoration.png" id="1_26fg2"]
+
+[node name="floor" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Mossy-BackgroundDecoration" type="Sprite2D" parent="."]
+position = Vector2(709, 1277)
+rotation = 1.5708
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_26fg2")

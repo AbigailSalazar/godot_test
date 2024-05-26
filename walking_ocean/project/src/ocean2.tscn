@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://lapjtt5at8wr"]
+
+[ext_resource type="Texture2D" uid="uid://bkn3oai3x8dep" path="res://assets/ocean-backgouds/Ocean_2/4.png" id="2_8p0fo"]
+[ext_resource type="Texture2D" uid="uid://o1n8m358gx2g" path="res://assets/ocean-backgouds/Ocean_2/2.png" id="2_ee6is"]
+[ext_resource type="Texture2D" uid="uid://bk25wxgtfig4u" path="res://assets/ocean-backgouds/Ocean_2/3.png" id="3_j0di0"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+position = Vector2(325, -126)
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(243, 452)
+scale = Vector2(2, 2)
+texture = ExtResource("2_ee6is")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+position = Vector2(332, -128)
+motion_scale = Vector2(0.1, 0.1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(246, 451)
+scale = Vector2(2, 2)
+texture = ExtResource("2_8p0fo")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+position = Vector2(341, 9)
+motion_scale = Vector2(0.6, 0.6)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(-11, 320)
+texture = ExtResource("3_j0di0")

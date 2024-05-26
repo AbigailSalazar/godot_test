@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://d2xbsyjxsmwo3"]
+
+[ext_resource type="PackedScene" uid="uid://d2cmv3d7470u" path="res://src/ocean1.tscn" id="1_hifh7"]
+[ext_resource type="PackedScene" uid="uid://b810tb4vla4v1" path="res://src/player.tscn" id="1_sq5p4"]
+[ext_resource type="PackedScene" uid="uid://b2lhuuncox41" path="res://src/floor.tscn" id="2_md63e"]
+[ext_resource type="PackedScene" uid="uid://bbnxdkxtgydix" path="res://src/ui.tscn" id="4_p7ken"]
+
+[node name="main" type="Node"]
+
+[node name="Background" parent="." instance=ExtResource("1_hifh7")]
+
+[node name="Node2D" parent="." instance=ExtResource("2_md63e")]
+position = Vector2(1, 0)
+
+[node name="Player" parent="." instance=ExtResource("1_sq5p4")]
+position = Vector2(82, 544)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(502, -216)
+
+[node name="CanvasLayer" parent="." instance=ExtResource("4_p7ken")]
