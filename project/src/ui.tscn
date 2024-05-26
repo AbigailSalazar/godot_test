@@ -27,7 +27,7 @@ offset_bottom = 62.0
 focus_mode = 0
 action_mode = 0
 shortcut = SubResource("Shortcut_awmya")
-text = "Mapa"
+text = "Map"
 
 [node name="Label" type="Label" parent="."]
 texture_filter = 1
